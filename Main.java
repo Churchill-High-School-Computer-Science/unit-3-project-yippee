@@ -11,16 +11,21 @@ public class Main {
     System.out.println("Are you ready? ");
     String a = input.nextLine();
     
-    if (a == "no")
+    if (a.equals("no"))
     {
         System.out.println("then GET OUT!!!");
+        System.exit(0);
     }
     else
     {
         System.out.println("Okay Question 1: ");
     }
     
+    System.out.println(q.quest("What is mu favoorite c olro??", "CYAN"));
 
+    String x = input.nextLine();
+    
+    System.out.println(q.answer(x));
     }
 
 }

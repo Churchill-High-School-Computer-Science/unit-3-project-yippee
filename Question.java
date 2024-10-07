@@ -34,4 +34,5 @@ public class Question {
     {
         return ("You got " + numRight + " questions right\nYour score is " + score + ".");
     }
+   
 }

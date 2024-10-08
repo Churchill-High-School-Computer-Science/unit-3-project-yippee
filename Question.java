@@ -17,8 +17,8 @@ public class Question {
     }
     
     public String answer(String x)
-    {
-        if(x == ans)
+    {   
+        if(x.equals(ans))
         {
             score += 10;
             numRight++;
@@ -27,7 +27,7 @@ public class Question {
         }
         else
         {
-            return "Wrong";
+            return ans + x;
         }
     }
     public String endGame()
